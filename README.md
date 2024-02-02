@@ -14,7 +14,7 @@ sqlite3 < init.sql
     - Install ODBC Driver:
         - http://www.ch-werner.de/sqliteodbc/sqliteodbc_w64.exe 
     - Working DSN connection string:  
-        - `conn.Open "DSN=SQLite3 Datasource;Database=C:/src/vb-script-sql/company.db;"`
+        - `conn.Open "DSN=SQLite3 Datasource;Database=C:/path/to/vb-script-sql/company.db;"`
 
 ### Notes: 
 Check System DSN:
