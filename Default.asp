@@ -5,6 +5,13 @@ conn.Open "DSN=SQLite3 Datasource;Database=C:/src/vb-script-sql/company.db;"
 Set rs = Server.CreateObject("ADODB.Recordset")
 rs.Open "SELECT * FROM Employees", conn
 %>
+<form action="add.asp" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name"><br><br>
+  <label for="position">Position:</label>
+  <input type="text" id="position" name="position"><br><br>
+  <input type="submit" value="Add Employee">
+</form>
 
 <table>
   <tr>

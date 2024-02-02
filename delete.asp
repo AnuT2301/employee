@@ -6,7 +6,7 @@ If Request("id") <> "" Then
     conn.Execute("DELETE FROM Employees WHERE ID = " & Request("id"))
 End If
 
-Response.Redirect("index.asp")
+Response.Redirect("default.asp")
 
 conn.Close
 %>

@@ -1,10 +1,11 @@
 .open company.db
 
 CREATE TABLE Employees (
-    ID INT PRIMARY KEY,
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
     Name NVARCHAR(50),
     Position NVARCHAR(50)
 );
+
 
 
 INSERT INTO Employees (ID, Name, Position) VALUES

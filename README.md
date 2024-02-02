@@ -12,3 +12,9 @@ Issues Encountered:
         - http://www.ch-werner.de/sqliteodbc/sqliteodbc_w64.exe 
     - Working DSN connection string:  
         - `conn.Open "DSN=SQLite3 Datasource;Database=C:/src/vb-script-sql/company.db;"`
+
+Notes: 
+Check System DNS:
+    - `run | control admintools`
+    - ODBC Data Sources (64-bit) 
+    - System DSN

@@ -5,7 +5,7 @@ conn.Open "DSN=SQLite3 Datasource;Database=C:/src/vb-script-sql/company.db;"
 If Request("id") <> "" Then
     If Request("Name") <> "" And Request("Position") <> "" Then
         conn.Execute("UPDATE Employees SET Name = '" & Request("Name") & "', Position = '" & Request("Position") & "' WHERE ID = " & Request("id"))
-        Response.Redirect("index.asp")
+        Response.Redirect("default.asp")
     Else
         Set rs = Server.CreateObject("ADODB.Recordset")
         rs.Open "SELECT * FROM Employees WHERE ID = " & Request("id"), conn
