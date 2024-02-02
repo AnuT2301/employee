@@ -8,6 +8,7 @@
 
 ### Issues Encountered: 
 - IIS Startup Issues: Starting up the web server using IIS has been challenging.
+- #### Resolution: 
     - Install ODBC Driver:
         - http://www.ch-werner.de/sqliteodbc/sqliteodbc_w64.exe 
     - Working DSN connection string:  
