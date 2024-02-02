@@ -1,6 +1,6 @@
 <%
 Set conn = Server.CreateObject("ADODB.Connection")
-conn.Open "DRIVER=SQLite3;Database=C:/src/vb-script-sql/company.db;"
+conn.Open "DSN=SQLite3 Datasource;Database=C:/src/vb-script-sql/company.db;"
 
 If Request("id") <> "" Then
     If Request("Name") <> "" And Request("Position") <> "" Then
