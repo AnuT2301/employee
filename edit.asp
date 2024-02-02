@@ -22,3 +22,6 @@ End If
 
 conn.Close
 %>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
