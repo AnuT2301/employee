@@ -6,8 +6,6 @@ CREATE TABLE Employees (
     Position NVARCHAR(50)
 );
 
-
-
 INSERT INTO Employees (ID, Name, Position) VALUES
 (1, 'John Doe', 'Developer'),
 (2, 'Jane Smith', 'Manager'),

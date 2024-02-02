@@ -3,7 +3,7 @@ Dim sort
 sort = Request.QueryString("sort")
 
 If sort = "" Then
-  sort = "ID" ' Default sort column
+  sort = "ID" 
 End If
 
 Set conn = Server.CreateObject("ADODB.Connection")
@@ -13,65 +13,9 @@ Set rs = Server.CreateObject("ADODB.Recordset")
 rs.Open "SELECT * FROM Employees ORDER BY " & sort, conn
 %>
 
-<style>
-body {
-  font-family: Arial, sans-serif;
-}
-
-form {
-  margin-bottom: 1em;
-}
-
-label {
-  display: block;
-  margin-top: 1em;
-}
-
-input[type="text"] {
-  width: 100%;
-  padding: 0.5em;
-  margin: 0.5em 0;
-  box-sizing: border-box;
-}
-
-input[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 0.5em 1em;
-  margin: 1em 0;
-  border: none;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th, td {
-  text-align: left;
-  padding: 0.5em;
-  border-bottom: 1px solid #ddd;
-}
-
-tr:hover {background-color: #f5f5f5;}
-
-.container {
-  width: 50%; 
-  margin: auto; 
-  padding: 1em;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-input[type="text"] {
-  width: 100%; 
-}
-</style>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
 
 <div class="container">
   <form action="add.asp" method="post">
