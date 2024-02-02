@@ -6,14 +6,14 @@
 - SQL: Structured Query Language is used for managing and manipulating relational databases.
 
 
-Issues Encountered: 
+### Issues Encountered: 
 - IIS Startup Issues: Starting up the web server using IIS has been challenging.
     - Install ODBC Driver:
         - http://www.ch-werner.de/sqliteodbc/sqliteodbc_w64.exe 
     - Working DSN connection string:  
         - `conn.Open "DSN=SQLite3 Datasource;Database=C:/src/vb-script-sql/company.db;"`
 
-Notes: 
+### Notes: 
 Check System DNS:
     - `run | control admintools`
     - ODBC Data Sources (64-bit) 
