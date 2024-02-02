@@ -1,4 +1,4 @@
-# CRUD Application: ASP Classic, and SQLite
+# CRUD Application: ASP Classic and SQLite
 
 ## Demo: 
 
