@@ -13,7 +13,7 @@ sqlite3 < init.sql
 - Start via IIS 
 
 ### Issues Encountered: 
-- IIS Startup Issues: Starting up the web server using IIS has been challenging.
+IIS Web Server Startup
 - #### Resolution: 
     - Install ODBC Driver:
         - http://www.ch-werner.de/sqliteodbc/sqliteodbc_w64.exe 
